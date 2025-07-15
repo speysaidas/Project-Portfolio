@@ -21,7 +21,7 @@ HAVING Occurences > 1;
 # In this case, duplicates will receive a row number of 2.
 # I need this step to be able to filter out and eventually delete duplicates by row_id.
 # Since I can't just use a WHERE statement directly after a window function,
-# I am using a CTE and refering to it.
+# I am using a CTE and referring to it.
 
 WITH cte_row_num AS 
 (
